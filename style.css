@@ -1,0 +1,545 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(pexels-ella-olsson-1640773.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  animation: zoom 5.0s linear infinite;
+
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.logo {
+  width: 50px;
+  cursor: pointer;
+  margin: 20px 0px;
+  margin-left: 40px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+
+}
+
+
+
+li.lsit {
+  position: relative;
+  font-size: 1.2rem;
+  width: max-content;
+  list-style: none;
+  display: inline-block;
+  margin-right: 50px;
+  color: rgba(244, 252, 250, 0.973);
+
+
+}
+
+li.lsit:after {
+  display: block;
+  content: '';
+  border-bottom: solid 2px black;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in;
+  transform-origin: 100%;
+}
+
+li.lsit:hover:after {
+
+  transform: scaleX(1);
+  transform-origin: 0%;
+}
+
+.nav-btn {
+  border: none;
+  border-radius: 40px;
+  color: hsl(200, 82%, 11%);
+  padding: 5px 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: #fff;
+
+}
+
+
+
+.brand h1 {
+  color: #050708;
+  font-size: 15rem;
+  line-height: 138px;
+  font-family: 'Water Brush', cursive;
+  margin-top: 20vh;
+  text-transform: lowercase;
+  margin-left: 31vh;
+  font-style: italic;
+  font-weight: bold;
+  
+}
+
+.brand h1::before {
+  color: rgb(248, 232, 5);
+  content: "gold";
+  font-size: 14rem;
+  line-height: 138px;
+  font-family: 'Birthstone Bounce', cursive;
+
+}
+
+.brand p.brandslogan {
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  line-height: 20px;
+  margin-top: 3vh;
+  margin-left: 85vh;
+  font-style: italic;
+  font-weight: lighter;
+  color:#bfebeb;
+  
+}
+
+.brand {
+  margin-left: 56px;
+  margin-top: -63px;
+
+}
+
+.read h2 {
+  margin-top: 15vh;
+  font-size: 2.0rem;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-left: 21vh;
+}
+
+.read .btn {
+
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #050708;
+  margin-left: 21vh;
+  margin-top: 3vh;
+  text-transform: uppercase;
+  padding: 9px;
+  font-weight: bold;
+  border-radius: 0px 24px;
+}
+
+.read .btn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #050708;
+  padding: 12px;
+  width: 14%;
+  border-radius: 24px 0px;
+
+}
+
+.read p.line {
+
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #f1f0f7;
+  margin-left: 21vh;
+  margin-top: 1vh;
+  font-style: italic;
+  letter-spacing: 3px;
+  font-size: 1.1rem;
+}
+
+.well {
+  padding-top: 158px;
+  padding-bottom: 113px;
+  background-color: #f2dedecf;
+}
+
+.center {
+  text-align: center;
+}
+
+.welcome h2 {
+
+  text-transform: lowercase;
+  letter-spacing: 5px;
+  margin-top: -72px;
+  font-size: 3rem;
+  line-height: 50px;
+  font-family: "Dancing Script", cursive;
+  color: #4c4d4c;
+}
+
+.welcome h6 {
+  font-size: 20px;
+  line-height: 37px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+
+  margin-top: 72px;
+}
+
+.welcome .logo2 {
+  margin-top: 61px;
+  margin-left: 27px;
+  width: 14%;
+}
+
+
+/* section well2 */
+
+.photo {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container1 h2 {
+  font-size: 60px;
+  line-height: 50px;
+  font-family: "Dancing Script", cursive;
+  color: rgb(76, 77, 76);
+  margin-bottom: 55px;
+
+
+}
+
+
+.inline-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.inline-list li {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.thumb {
+  position: relative;
+  display: block;
+}
+
+.thumb img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.thumb:hover img {
+  transform: scale(1.1);
+}
+
+.thumb-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.thumb-over-btn {
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.thumb:hover .thumb-over {
+  opacity: 1;
+}
+
+/* ===================================well3 news and event=============================================== */
+
+
+.well3 {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background-color: #e4e4fb;
+}
+
+h2.center {
+
+  text-transform: capitalize;
+
+  letter-spacing: 5px;
+
+  /* margin-top: 141px; */
+  font-size: 50px;
+  line-height: 50px;
+  font-family: "Dancing Script", cursive;
+  color: #4c4d4c;
+  margin-bottom: 60px;
+
+}
+
+.grid_4 {
+  margin-left: 5px;
+  border-style: double;
+  border-color: #050708;
+  border-width: 3px;
+  border-collapse: separate;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+.ins {
+  padding: 64px 30px 60px 47px;
+}
+
+.mod {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #909090;
+}
+
+
+
+/* =======================================deal of the day============================================ */
+
+
+.well4 {
+  padding-top: 71px;
+  padding-bottom: 29px;
+  height: 522px;
+}
+
+.container4 {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+.container4 .grid_6 {
+  width: 485px;
+}
+
+.container4 [class*="grid_6"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 36px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+div {
+  display: block;
+}
+
+h3 span {
+  font-weight: bold;
+  font-size: 70px;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.grid_6 h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bolder;
+
+
+}
+
+p.off {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-top: 24px;
+
+}
+
+.grid_6 .bot {
+  color: red;
+  margin-top: 5px;
+  font-size: larger;
+}
+
+/* ========================================================footer=================================================== */
+
+.footer-ctn {
+  padding: 50px 0;
+
+  height: 600px;
+  background-color: #f8c2e2;
+}
+
+.container5 {
+
+
+  width: 100%
+}
+
+.row2 {
+  width: 100%;
+  height: 17rem;
+
+
+
+}
+
+.r1col1 {
+  float: left;
+  width: 40%;
+  background-color: white;
+  height: 17rem;
+  margin-left: 120px;
+  margin-top: 80px;
+  box-shadow: 5px 5px 5px 5px ;
+  /* border: 3px solid black;
+  border-radius: 10px; */
+}
+
+.r1col2 {
+  float: left;
+  width: 40%;
+  background-color: white;
+  height: 17rem;
+  margin-left: 20px;
+  margin-top: 80px;
+  /* border: 3px solid black;
+  border-radius: 20px; */
+  box-sizing: border-box;
+  box-shadow: 2px 5px 5px 5px;
+}
+
+.c1left {
+  float: left;
+  width: 40%;
+  height: 17rem;
+  /* background-color: blanchedalmond; */
+  padding: 49px 25px;
+}
+
+.c1right {
+  float: left;
+  width: 60%;
+  height: 17rem;
+  background-color: whitesmoke;
+}
+
+.c2left {
+  float: left;
+  width: 40%;
+  height: 17rem;
+  /* background-color: chartreuse; */
+  padding: 49px 25px;
+}
+
+.c2right {
+  float: left;
+  width: 60%;
+  height: 17rem;
+  background-color: whitesmoke;
+}
+
+h1.c1h1 {
+  margin: 22px 61px;
+}
+
+h1.c2h1 {
+  margin: 22px 70px;
+}
+
+p.c1pa {
+  margin: 30px 40px;
+}
+
+p.c2pa {
+  margin: 30px 40px;
+}
+
+.c1left img {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.c2left img {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.social_link {
+  text-align: center;
+
+  margin: 153px;
+}
+
+.social_link img {
+  height: 25px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+
+@keyframes zoom{
+  50%{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(salmon-1485014_1921.jpg);
+  
+  }
+  
+  50%{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(page-1_img04_original.jpg);
+  }
+  
+  
+  
+}
