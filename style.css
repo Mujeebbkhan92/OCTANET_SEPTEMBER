@@ -486,7 +486,7 @@ p.c2pa {
 
 .social_link {
   text-align: center;
-  margin: 153px;
+  background-color: #d7e8f0;
 }
 
 .social_link img {
@@ -680,7 +680,7 @@ p.c2pa {
   }
 
   .footer-ctn {
-    height: 110vh;
+    height: 100%;
   }
 
   .container5 {
